@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D277 Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Illinois - Home</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My State Website</h1>
+  <header class="site-header">
+    <a href="index.html" class="site-title" id="special">
+      <img src="images/seal.jpg" alt="" class="logo"> ILLINOIS
+    </a>    
+    <h1 class="page-title">Welcome to Illinois</h1>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="city1.html">City 1</a>
-    <a href="city2.html">City 2</a>
-    <a href="city3.html">City 3</a>
+
+  <nav aria-label="Primary">
+    <a href="index.html" class="current">Home</a>
+    <a href="city1.html">Chicago</a>
+    <a href="city2.html">Champaign</a>
+    <a href="city3.html">Springfield</a>
+    <a href="contact.html">Contact</a>
   </nav>
-  <section>
-    <p>Intro about the state goes here...</p>
-  </section>
-  <aside>
-    <p>Fun Fact: Something about the state!</p>
-  </aside>
+
+  <div class="layout">
+    <section>
+      <article class="card">
+        <h2>About Illinois</h2>
+        <p>Illinois is a Midwestern state. <strong>Springfield</strong> is the capital, and <strong>Chicago</strong> is the largest city. The state touches the Mississippi and Ohio Rivers and meets Lake Michigan in the northeast.</p>
+        <p class="muted"><small>Source: <a href="https://en.wikipedia.org/wiki/Illinois" target="_blank" rel="noopener">Wikipedia — Illinois</a></small></p>
+      </article>
+
+      <article class="card">
+        <h2>Quick Snapshot</h2>
+        <ul>
+          <li>Region: Midwest, USA</li>
+          <li>Capital: Springfield</li>
+          <li>Largest city: Chicago</li>
+        </ul>
+
+        <h2>Popular Things to Do</h2>
+        <ol>
+          <li>Visit museums and the lakefront in Chicago</li>
+          <li>Tour the State Capitol in Springfield</li>
+          <li>Explore parks and trails across the state</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>At-a-Glance Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Known For</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chicago</td>
+              <td>Lakefront, skyline, culture</td>
+              <td>Urban center in the northeast</td>
+            </tr>
+            <tr>
+              <td>Champaign</td>
+              <td>College town</td>
+              <td>Part of the Champaign–Urbana area</td>
+            </tr>
+            <tr>
+              <td>Springfield</td>
+              <td>State government</td>
+              <td>Capital city in central Illinois</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <section class="card">
+        <h2>References</h2>
+        <ol>
+          <li><a href="https://en.wikipedia.org/wiki/Illinois" target="_blank" rel="noopener">Wikipedia — Illinois</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Chicago" target="_blank" rel="noopener">Wikipedia — Chicago</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Champaign,_Illinois" target="_blank" rel="noopener">Wikipedia — Champaign, Illinois</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Springfield,_Illinois" target="_blank" rel="noopener">Wikipedia — Springfield, Illinois</a></li>
+          <li><a href="https://www.census.gov/quickfacts/fact/table/IL/INC110223" target="_blank" rel="noopener">U.S. Census Bureau — QuickFacts: Illinois (median household income)</a></li>
+        </ol>
+      </section>
+    </section>
+
+    <aside class="card">
+      <span class="badge tag" aria-label="Questions?">Questions?</span>
+      <h2>Plan a Visit</h2>
+      <p class="muted">Have a question? We’ll get back to you by email.</p>
+      <p><a class="btn" href="contact.html">Contact us</a></p>
+      <p><a href="https://www.illinois.gov" target="_blank" rel="noopener">Official Illinois website</a></p>
+    </aside>
+  </div>
 </body>
 </html>
