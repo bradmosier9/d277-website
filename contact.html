@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Illinois</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-title" id="special">
+        <img src="images/seal.jpg" alt="" class="logo"> ILLINOIS
+      </a>
+    <h1 class="page-title">Contact</h1>
+  </header>
+
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="city1.html">Chicago</a>
+    <a href="city2.html">Champaign</a>
+    <a href="city3.html">Springfield</a>
+    <a href="contact.html" class="current">Contact</a>
+  </nav>
+
+  <div class="layout">
+    <section>
+        <article class="card contact-card">
+          <h2>Send Us a Question</h2>
+          <p class="muted" id="contact-help">We’ll get back to you by email. All fields are required.</p>
+      
+          <form onsubmit="return validateForm()" aria-describedby="contact-help" novalidate>
+            <fieldset class="form-grid">
+              <legend class="visually-hidden">Your information</legend>
+      
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+              </div>
+      
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+              </div>
+      
+              <div class="field full">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+      
+              <div class="field full">
+                <label for="confirmEmail">Confirm email address</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" required autocomplete="email">
+              </div>
+      
+              <div class="field full">
+                <label for="question">Your question</label>
+                <textarea id="question" name="question" rows="6" required></textarea>
+              </div>
+            </fieldset>
+      
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </article>
+      </section>
+      
+      <aside class="card">
+        <h2>Need help?</h2>
+        <p>Check the state site for more resources.</p>
+      
+        <p>
+            <img src="images/seal.jpg" alt="Illinois State Seal" />
+        </p>
+      
+        <p><a href="https://www.illinois.gov" target="_blank" rel="noopener">Official Illinois website</a></p>
+      </aside>
+  </div>
+</body>
+</html>
